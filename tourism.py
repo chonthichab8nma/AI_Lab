@@ -80,9 +80,9 @@ class ProvinceSearchApp(QWidget):
 
         # โหลด Ontology
         try:
-            self.ontology_search = OntologySearch("tourism.owl")  # ปรับใช้การค้นหาด้วย rdflib
+            self.ontology_search = OntologySearch("mytourism.owl")  # ปรับใช้การค้นหาด้วย rdflib
         except FileNotFoundError:
-            print("ไม่พบไฟล์ tourism.owl")
+            print("ไม่พบไฟล์ mytourism.owl")
             self.close()  # ปิดแอปหากไม่พบไฟล์
             return
 
